@@ -80,6 +80,4 @@ const server = http.createServer( (request, response) => {
 
 })
 
-server.listen(process.env.PORT || port, hostname, () => {
-	console.log(`Server running at http://${hostname}:${port}/`);
-})
+server.listen(process.env.PORT || port);
