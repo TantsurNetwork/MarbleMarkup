@@ -70,7 +70,12 @@ const server = http.createServer( (request, response) => {
 		case '/img/quote.png':
 			response.end( fs.readFileSync('img/quote.png') );
 			break;
-
+		case '/flavicon.ico':
+			response.end( fs.readFileSync('img/flavicon.ico') );
+			break;
+		case '/img/burger.png':
+			response.end( fs.readFileSync('img/burger.png') );
+			break;
 
 		//
 		default:
